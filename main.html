@@ -36,26 +36,28 @@
         </div>
         <div class="form">
             <h2>Solicite um orçamento gratuito</h2>
-            <form action="" class="form">
+            <form class="form" onsubmit="enviar(event)">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" required>
                     <label for="sobrenome">Sobrenome:</label>
                     <input type="text" name="sobrenome" id="sobrenome" >
-                    <label for="nome">Email:</label>
-                    <input type="email" name="email" id="email" >
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" name="telefone" id="telefone" >
-                <label for="serviço">Serviço:</label>
+                    <input type="tel" name="telefone" id="telefone" required>
+                <p id="serviço">Serviço:</p>
                 <div class="serviço">
-                    <input type="radio" name="serviço" value="Residencial">Residencial
-                    <input type="radio" name="serviço" value="Comercial">Comercial
+                    <input type="radio" name="serviço" value="Residencial" id="residencial" required>
+                    <label for="residencial">Residencial</label>
+                    <input type="radio" name="serviço" value="Comercial" id="comercial" required>
+                    <label for="comercial">Comercial</label>
                 </div>
                 <button type="submit" class="botão">Enviar</button>
             </form>
         </div>
     </section>
     <section class="depoimentos">
-        <h2>Depoimentos</h2>
+        <h2></h2>
         <div class="cliente01">
             <img src="img/cliente01.jpg" alt="foto de perfil">
             <h2>Juliana Martins — Cliente Residencial</h2>
@@ -75,5 +77,6 @@
     <footer>
         <h3>© 2025 SunWave Energia — Todos os direitos reservados.</h3>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
