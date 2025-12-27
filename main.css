@@ -18,11 +18,11 @@ header{
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
-    padding:10px ;
-    font-size: 0.7em;
+    font-size: 0.8em;
     height: 15vh;
+    width: 100vw;
 }
 
 .sobre{
@@ -48,12 +48,11 @@ section{
     justify-content: center;
     text-align: center;
     margin: 30px;
-    height: 50vh;
+    height: 55vh;
 }
 
 .benefícios{
     display: flex;
-    height: 300px;
     align-items: center;
 
     background-color:#ffffff;
@@ -65,7 +64,7 @@ section{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px ;
     width: 50%;
-    height: 50vh;
+    height: 55vh;
     padding: 4px;
 }
 
@@ -91,6 +90,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top:20px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px ;
     gap: 5px;
@@ -101,6 +101,13 @@ section{
 
     font-weight: 700;
     font-family: "Tinos", serif;
+}
+
+.form > form{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .serviço{
@@ -164,4 +171,65 @@ footer{
     justify-content: center;
     margin-top: 30px;
     font-family: "Tinos", serif;;
+}
+
+@media screen and (max-width: 768px) {
+    
+header{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 0.8em;
+    height: auto;
+    justify-content: start;
+    text-align: center;
+    padding-bottom:10px ;
+}
+
+nav{
+    margin-bottom: 30px;
+    background-image: url(img/principal-pequena.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+    section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.form{
+    width: 80vw;
+    height: 55vh;
+    margin-top: 10px;
+}
+
+.benefícios{
+    width: 80vw;
+    height: 55vh;
+}
+
+.form > form{
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px #212121a1;
+}
+
+.sobre{
+    height: auto;
+    width: auto;
+    margin: 0px;
+    border-radius: 0px;
+    text-align: center;
+    padding: 20px;
+}
+
+
 }

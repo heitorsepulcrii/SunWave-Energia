@@ -11,17 +11,21 @@
 </head>
 <body>
     <header>
-        <img src="img/Design sem nome (3).png" alt="logotipo">
-        <h1>"Tempo para economizar. Tempo para energia limpa."<h1>
+        <img src="img/Logo.png" alt="logotipo">
+        <h1>"Tempo para economizar. Tempo para energia limpa."</h1>
     </header>
     <nav>
-        <img class="principal" src="img/Sem nome (1920 x 500 px).png" alt="imagem principal">
+        <picture>
+            <source srcset="img/principal-pequena.jpg" media="(max-width: 620px)">
+            <source srcset="img/principal-media.jpg" media="(max-width: 800px)" height="500px">
+            <img src="img/principal.png" alt="Imagem principal">
+        </picture>
     </nav>
     <section class="sobre">
         <p>A <strong>SunWave Energia</strong> é uma empresa especializada em soluções fotovoltaicas para residências, comércios e indústrias. Atuamos desde a análise técnica até a instalação e homologação do sistema, garantindo eficiência, economia e segurança.</p>
         <p>Nosso compromisso é oferecer projetos personalizados, utilizando equipamentos de alta performance e uma equipe técnica qualificada, sempre focados na satisfação do cliente e na preservação do meio ambiente.</p>
     </section>
-    <section>
+    <section class="principal">
         <div class="benefícios"> 
             <h2>A SunWave Energia ajuda você a reduzir até 95% da sua conta de luz com soluções modernas em energia solar para residências e empresas.</h2>
             <ul>
