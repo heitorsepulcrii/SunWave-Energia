@@ -186,13 +186,6 @@ header{
     padding-bottom:10px ;
 }
 
-nav{
-    margin-bottom: 30px;
-    background-image: url(img/principal-pequena.jpg);
-    background-repeat: no-repeat;
-    
-}
-
     section{
     display: flex;
     flex-direction: column;
@@ -230,6 +223,4 @@ nav{
     text-align: center;
     padding: 20px;
 }
-
-
 }
